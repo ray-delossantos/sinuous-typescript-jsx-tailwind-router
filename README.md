@@ -1,20 +1,20 @@
-# jsx-demo
+# Sinuous JSX Typescript demo
 
 ## Overview
-A demo project for showing off JSX in TypeScript
+
+A demo project for showing off Sinuous JSX in TypeScript
 
 ## Install dependencies
 ```
-npm install
+yarn
 ```
 
 ## Compile
 ```
-npm run build
+yarn build
 ```
 
 ## Start http server
 ```
-npm start
+yarn start
 ```
-

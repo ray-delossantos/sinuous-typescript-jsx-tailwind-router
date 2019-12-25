@@ -615,10 +615,10 @@ serialize-javascript@^2.1.2:
   resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-2.1.2.tgz#ecec53b0e0317bdc95ef76ab7074b7384785fa61"
   integrity sha512-rs9OggEUF0V4jUSecXazOYsLfu7OGK2qIn3c7IPBiffz32XniEp/TX9Xmc9LQfK2nQ2QKHvZ2oygKUGU0lG4jQ==
 
-sinuous@^0.18.5:
-  version "0.18.5"
-  resolved "https://registry.yarnpkg.com/sinuous/-/sinuous-0.18.5.tgz#c77cfa409f8a3198d6f35e6389292bf04bae8241"
-  integrity sha512-UQ/+gF91Y7H+AT7PRCJqPOCAZjnrfGr1sMHZxgn018W3H1kFagbI2ohMjSqLPT7etzQcK5uIR7U1G/1FtYKRmA==
+sinuous@0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/sinuous/-/sinuous-0.19.0.tgz#d8ef2d48d7baec843c65e7ce5c80874fa6ba76f8"
+  integrity sha512-Q3MBxHbzZPUCZs1EjKaKtTYYCrE//iSrdkdw681oIeuGgJkiUqNrpxazbA19ATJKtFuljK4y0u/On3AvOb7iNg==
 
 size-plugin-core@^0.0.7:
   version "0.0.7"

@@ -21,7 +21,7 @@
   "contributors": [
     "Wesley Luyten <me@wesleyluyten.com> (https://wesleyluyten.com)"
   ],
-  "license": "Apache",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@rollup/plugin-typescript": "^2.0.1",
     "http-server": "^0.12.0",
@@ -33,6 +33,6 @@
     "typescript": "latest"
   },
   "dependencies": {
-    "sinuous": "^0.18.5"
+    "sinuous": "0.19.0"
   }
 }
