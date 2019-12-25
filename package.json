@@ -7,7 +7,7 @@
     "dev": "rollup -w -c",
     "build": "rollup -c",
     "start": "http-server -c-1 dist & yarn dev",
-    "deploy": "yarn build && git add dist && (git diff-index --quiet HEAD || git commit -m 'Deploy') && git subtree push --prefix dist origin gh-pages"
+    "deploy": "yarn build && git add -f dist && (git diff-index --quiet HEAD || git commit -m 'Deploy') && git subtree push --prefix dist origin gh-pages"
   },
   "repository": "luwes/sinuous-typescript-jsx",
   "keywords": [
