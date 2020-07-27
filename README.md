@@ -18,3 +18,13 @@ yarn build
 ```
 yarn start
 ```
+
+## Tailwind CSS
+```
+There's a full functioning postcss config for working in a dev environment.
+```
+
+## Vanilla Router
+```
+The Vanilla router is integrated. All routes are defined in app.tsx
+```

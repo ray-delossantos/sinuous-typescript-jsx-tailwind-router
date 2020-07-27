@@ -8,12 +8,12 @@ import './styles.css'
 
 
   add('/hello/{name}/', async (name) => {
-    const { Greeter } = await import('./greeter')
+    const { Greeter } = await import('./panels/greeter')
     return(<Greeter greeting="Hello" whomToGreet={name} />)
   })
 
   add('/hello/', async () => {
-    const { Greeter } = await import('./greeter')
+    const { Greeter } = await import('./panels/greeter')
     return(<Greeter greeting="Hello" whomToGreet="John" />)
   })
 
@@ -24,6 +24,7 @@ import './styles.css'
         {resolve()}
       </main>);
 
+  // Always call activate() after defining all routes functions
   activate()
 
 })();
