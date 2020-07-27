@@ -1,25 +1,33 @@
 import { h } from 'sinuous';
-import { Greeter, GreeterProps } from './greeter';
+import { add, resolve, activate } from './router';
 
-function getRandomGreeting() {
-  switch (Math.floor(Math.random() * 4)) {
-    case 0:
-      return 'Hello';
-    case 1:
-      return 'Howdy';
-    case 2:
-      return 'Greetings to you';
-    case 3:
-      return 'Hail';
-  }
-}
+import './styles.css'
 
-(() => {
-  let props: GreeterProps = {
-    whomToGreet: 'world!'
-  };
+
+(async () => {
+
+
+  add('/hello/{name}/', async (name) => {
+    const { Greeter } = await import('./greeter')
+    return(<Greeter greeting="Hello" whomToGreet={name} />)
+  })
+
+  add('/hello/', async () => {
+    const { Greeter } = await import('./greeter')
+    return(<Greeter greeting="Hello" whomToGreet="John" />)
+  })
 
   document
-    .getElementById('output')
-    .appendChild(<Greeter {...props} greeting={getRandomGreeting} />);
+    .body
+    .appendChild(
+      <main class="flex h-screen">
+        {resolve()}
+      </main>);
+
+  activate()
+
 })();
+
+
+
+

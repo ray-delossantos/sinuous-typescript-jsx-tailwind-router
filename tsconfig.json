@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "jsxFactory": "h"
-  }
+    "jsxFactory": "h",
+    "esModuleInterop": true
+  },
+  "files": ["src", "custom.d.ts"]
 }

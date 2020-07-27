@@ -1,38 +1,49 @@
 {
-  "name": "sinuous-jsx-demo",
+  "name": "sinuous-jsx-tailwind-router-demo",
   "version": "0.0.1",
-  "description": "Sinuous JSX in TypeScript Demo Project",
+  "description": "Sinuous JSX in TypeScript Demo Project with router and tailwind",
   "main": "dist/app.js",
   "scripts": {
     "dev": "rollup -w -c",
     "build": "rollup -c",
-    "start": "http-server -c-1 dist & yarn dev",
+    "start": "http-server --proxy http://localhost:8080? -c-1 dist & yarn dev",
     "deploy": "yarn build && git add -f dist && (git diff-index --quiet HEAD || git commit -m 'Deploy') && git subtree push --prefix dist origin gh-pages"
   },
-  "repository": "luwes/sinuous-typescript-jsx",
+  "repository": "raydf/sinuous-typescript-jsx-tailwind-router",
   "keywords": [
     "jsx",
     "tsx",
     "typescript",
     "ts",
-    "sinuous"
+    "sinuous",
+    "tailwind",
+    "router"
   ],
   "author": "Ryan Cavanaugh (Microsoft)",
   "contributors": [
-    "Wesley Luyten <me@wesleyluyten.com> (https://wesleyluyten.com)"
+    "Wesley Luyten <me@wesleyluyten.com> (https://wesleyluyten.com)",
+    "Rayner De Los Santos <raynerdls@gmail.com>"
   ],
   "license": "Apache-2.0",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "@rollup/plugin-typescript": "^3.0.0",
     "http-server": "^0.12.1",
+    "postcss-import": "^12.0.1",
     "rollup": "^1.31.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^3.1.2",
     "rollup-plugin-size": "^0.2.1",
+    "rollup-plugin-svg": "^2.0.0",
     "rollup-plugin-terser": "^5.2.0",
+    "tailwindcss": "^1.4.6",
     "tslib": "^1.10.0",
     "typescript": "3.7.5"
   },
   "dependencies": {
-    "sinuous": "0.23.2"
+    "sinuous": "^0.27.7",
+    "vanilla-router": "^1.2.8"
   }
 }
