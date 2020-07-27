@@ -17,7 +17,7 @@ export function Greeter(props: GreeterProps) {
   }
 
   return (
-    <div onClick={() => console.log(99)}>
+    <div class="m-auto" onClick={() => console.log(99)}>
       {greeting}, {props.whomToGreet}
     </div>
   );

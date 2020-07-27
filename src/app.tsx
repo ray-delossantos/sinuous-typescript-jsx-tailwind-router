@@ -14,7 +14,12 @@ import './styles.css'
 
   add('/hello/', async () => {
     const { Greeter } = await import('./panels/greeter')
-    return(<Greeter greeting="Hello" whomToGreet="John" />)
+    return(<Greeter greeting="Hello" whomToGreet="World" />)
+  })
+
+  add('/', async () => {
+    const { Greeter } = await import('./panels/greeter')
+    return(<Greeter greeting="Hello" whomToGreet="World" />)
   })
 
   document
